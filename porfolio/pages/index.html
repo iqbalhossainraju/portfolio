@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="header">
+        <!-- -------------------- Nav start ---------------------------- -->
+        <nav class="flex justify-around items-center" id="navbar">
+            <div class="text-4xl font-bold">
+                iqbalhossain<span class="text-green-700">.</span>
+            </div>
+            <ul>
+                <li class="inline-block mx-5"><a class="no-underline hover:text-amber-200" href="http://"
+                        target="_blank">Home</a></li>
+                <li class="inline-block mx-5"><a class="no-underline hover:text-amber-200" href="http://"
+                        target="_blank">About ME</a>
+                </li>
+                <li class="inline-block mx-5">
+                    <button class="bg-black text-white p-3 rounded-xl mt-5 bg-orange-600"><i
+                            class="fa-brands fa-waze"></i> Say
+                        Hello</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- -------------------- Nav end ---------------------------- -->
+        <!-- -------------------- Nav mobile version ---------------------------- -->
+        <label class="lg:hidden">
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <nav class="slide">
+                <h1>Iqbal Hossain<span class="text-xl font-bold text-amber-500">.</span></h1>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a class="bg-black text-white p-3 rounded-xl mt-5 bg-orange-600" href=""><i
+                                class="fa-brands fa-waze"></i> say Hello </a></li>
+                </ul>
+            </nav>
+        </label>
+        <!-- -------------------- Nav mobile version ---------------------------- -->
+        <!-- -------------------- banner ---------------------------- -->
+        <div class="flex flex-wrap">
+            <div class="w-full sm:w-8/12 mb-10">
+                <div class="container mx-auto h-full sm:p-10">
+                    <nav class="flex px-4 justify-between items-center">
+                        <!-- <div class="text-4xl font-bold">
+                            iqbalhossain<span class="text-green-700">.</span>
+                        </div> -->
+                        <div>
+                            <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
+                        </div>
+                    </nav>
+                    <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+                        <div class="w-full">
+                            <h1 class="text-xl font-semibold">Hello My Name is</h1>
+                            <h2 class="text-6xl font-bold mb-5"><span class="text-green-700">Iqbal</span> Hossain
+                            </h2>
+                            <h1 class="text-4xl lg:text-6xl font-bold">I am <span
+                                    class="auto-type text-green-700"></span></h1>
+                            <div class="w-20 h-2 bg-green-700 my-4"></div>
+                            <p class="text-xl mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                                maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a
+                                corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>
+                            <a href="resume.html"
+                                class="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow"><i
+                                    class="fa-brands fa-waze"></i> RESUME</a>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <img src="../pages/images/people.png" alt="Leafs" class="w-full h-48 object-cover sm:h-screen sm:w-4/12">
+        </div>
+    </section>
+    <!-- -------------------- nav end ---------------------------- -->
+
+
+    <!-- -------------------- About Me ---------------------------- -->
+    <!-- <Section id="about" class="mt-5">
+        <h1 class="text-center text-5xl text-amber-500 font-bold uppercase py-5">About Me</h1>
+        <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 items-center justify-center p-5">
+            <img class="lg:w-96 mx-auto" src="../pages/images/people.png" alt="">
+            <p class="lg:text-2xl md:text-2xl sm:text-xl leading-10 lg:font-medium md:font-medium sm:font-extralight">
+                I'm <span class="text-red-500">Iqbal Hossain</span>. I'm
+                a front-end web designer from Dhaka,Bangladesh. <br>
+                I've great experience in UI/UX design. I am ready to offer my expertise! <br>
+                Feel free to get in touch for an initial consultation. <br>
+                Some of the technologies I have great experience with: - HTML5, CSS3 - Tailwind, DaysiUI, Bootstrap,
+                React
+                Bootstrap
+                -
+                Figma to HTML, PSD to HTML.</p>
+        </div>
+    </Section> -->
+    <!-- -------------------- About Me End ---------------------------- -->
+
+
+    <!-- -------------------- services start ---------------------------- -->
+    <section id="services">
+        <div class="text-center py-5">
+            <h1 class="text-5xl font-bold uppercase">What I Do</h1>
+            <p class="text-amber-500 font-semibold text-xl">My Services</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center mt-10 card">
+
+            <!-- card 1 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <i class="fa-brands fa-figma text-xl text-white"></i>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">DESIGN SKILLS</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Proficient in Figma design, creating sleek user interfaces and intuitive user experiences
+                            with a strong eye for aesthetics and usability.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <i class="fa-brands fa-react text-xl text-white"></i>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">DESIGN SKILLS</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Proficient in Figma design, creating sleek user interfaces and intuitive user experiences
+                            with a strong eye for aesthetics and usability.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <i class="fa-brands fa-pushed text-xl text-white"></i>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">DESIGN SKILLS</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Proficient in Figma design, creating sleek user interfaces and intuitive user experiences
+                            with a strong eye for aesthetics and usability.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- -------------------- services End ---------------------------- -->
+
+
+    <!-- -------------------- PORTFOLIO start ---------------------------- -->
+    <section id="portfolio">
+        <div class="text-center py-5">
+            <h1 class="text-5xl font-bold uppercase">portfolio</h1>
+            <p class="text-amber-500 font-semibold text-xl">MY Cases</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center mt-10">
+
+            <!-- card 1 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 1</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo
+                            juice poutine.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 2</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem
+                            perspiciatis iure ut laborum inventore et maxime amet.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="p-4 max-w-sm">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 3</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem
+                            perspiciatis iure ut laborum inventore et maxime amet.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- -------------------- PORTFOLIO End ---------------------------- -->
+
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="lg:p-28 md:p-28">
+            <div class="text-center py-5">
+                <h1 class="text-5xl font-bold">Contact</h1>
+                <p class="text-amber-500 font-semibold text-xl">Are You Looking For Your Business Online Presence? I am
+                    here.
+                    🙂</p>
+            </div>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-4 overflow-hidden card mx-5">
+                <div class="text-center bg-sky-600 p-10 rounded-xl shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fa-solid fa-user-tie text-6xl text-amber-500"></i>
+                    <h1 class="text-white text-3xl py-3">Iqbal Hossain</h1>
+                    <p class="text-white">Web Developer (React-JS)​</p>
+                </div>
+                <div class="text-center bg-sky-600 p-10 rounded-xl shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fa-solid fa-person-circle-check text-6xl text-amber-500"></i>
+                    <h1 class="text-white text-3xl py-3">Freelance</h1>
+                    <p class="text-white">Available Right Now​</p>
+                </div>
+                <div class="text-center bg-sky-600 p-10 rounded-xl shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fa-solid fa-envelope text-6xl text-amber-500"></i>
+                    <h1 class="text-white text-3xl py-3">Email</h1>
+                    <p class="text-white">iqbalhossainraju@yahoo.com​</p>
+                </div>
+                <div class="text-center bg-sky-600 p-10 rounded-xl shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fa-brands fa-square-whatsapp text-6xl text-amber-500"></i>
+                    <h1 class="text-white text-3xl py-3">What's App</h1>
+                    <p class="text-white">+8801869175104​</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact End-->
+
+
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Designer", "React Coder", "Front-end Developer"],
+            typespeed: 500,
+            backspeed: 500,
+            loop: true,
+        });
+    </script>
+
+    <!-- card script -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', card);
+
+        function card() {
+            var cards = document.querySelectorAll('.card')
+            for (var i = 0; i < cards.length; i++) {
+                var windowheight = window.innerHeight;
+                var cardtop = cards[i].getBoundingClientRect().top;
+                var cardpoint = 150;
+
+                if (cardtop < windowheight - cardpoint) {
+                    cards[i].classList.add('active');
+                }
+                else {
+                    cards[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
